@@ -1,0 +1,158 @@
+<html>
+    <head>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+ <img src="images.jpeg" alt="Top Image" class="top-image">
+<style>
+  .love-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    color: #eab5c4;
+      
+                    height: 100vh;
+                    display: flex;
+                    margin:50px;
+                    justify-content: center; /* horizontal */
+                    align-items: center;     /* vertical */
+                     animation: fadeIn 3s ease-in-out;
+                                    }
+
+                             @keyframes fadeIn {
+                                                from {
+                                                     opacity: 0;
+                                                     transform: translateY(10px);
+                                                     }
+                                                to {
+                                                    opacity: 1;
+                                                    transform: translateY(0);
+                                                    }
+                                                }
+  
+         body {
+                    margin:100px;
+                    height: 100vh;
+                    display: flex;
+                    margin-left: 400px;
+                    justify-content: center; /* horizontal */
+                    align-items: center;     /* vertical */
+         }
+            
+    
+</style>
+       
+     <body>
+         
+
+          <br>  <p class="love-text">Will you be my valentine??</p>
+            <div class="container">
+                    
+
+                    <div class="buttons">
+                        <button id="yes" class="yes">Yes</button>
+                 
+                        <button id="no" class="no">No</button>
+                    </div>
+                     <h4 class="note" style="color:rgb(239, 159, 214);">Looks like No button is a little bit shy 😄</h4>
+                    </div>
+                    <script>
+                            document.getElementById("yes").onclick = function () {
+                                window.location.href = "yes.html";
+                            };
+
+                                    document.getElementById("no").onclick = function (event) {
+                                    const button = this;
+
+                                    const maxX = window.innerWidth - button.offsetWidth;
+                                    const maxY = window.innerHeight - button.offsetHeight;
+
+                                    const randomX = Math.floor(Math.random() * maxX);
+                                    const randomY = Math.floor(Math.random() * maxY);
+
+                                    button.style.left = randomX + "px";
+                                    button.style.top = randomY + "px";
+                                };
+                    </script>
+            
+
+        <style>
+
+            body {
+                    margin:0;
+                    height: 100vh;
+                    display: flex;
+                    justify-content: below;
+                    align-items: center;
+                    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(194, 34, 90), rgb(106, 3, 75)
+            );
+                    display: flex;
+                    flex-direction: column; /* keeps image on top */
+                    align-items: center;         
+                 }
+
+                            .container {
+                            text-align: center;
+                            }
+
+                            .buttons {
+                            margin-top: -50px;
+                            margin-left: -300px;
+                            }
+
+                            button {
+                            padding: 10px 25px;
+                            font-size: 16px;
+                            cursor: pointer;
+                            border-style: none;
+                            margin-left: -100px;
+                            }
+
+                            .yes {
+                            background-color: rgb(57, 9, 74);
+                            color: rgb(185, 12, 96);                       
+                            border-radius: 25px;
+                            background-image: url(download.jpeg);
+                            background-position: left top;
+                            background-repeat: repeat;
+                            padding: 20px;
+                            width: 200px;
+                            height: 100px;
+                            margin-top: -5px;
+                            margin-left: 210px;
+                            margin-right: 90px;
+                             font-family: 'Pacifico', cursive;
+                            }
+
+
+
+                            .no {
+                            background-color: rgb(255, 255, 255);
+                            color: rgb(169, 27, 110);
+                            margin-left: -60px;
+                            border-style: none;
+                            border-radius: 25px;
+                            background-image: url(download.jpeg);
+                            background-position: left top;
+                            background-repeat: repeat;
+                            padding: 20px;
+                            width: 200px;
+                            height: 100px;
+                            margin-top: -5px;
+                            margin-right: -200px;
+                            position: absolute;
+                             font-family: 'Pacifico', cursive;
+                            }
+                            .note {
+                                    margin-bottom: 10px;
+                                    margin-top: 180px;
+                                    margin-right: -300px;
+                                    font-weight: normal;                                   
+                            }
+
+                                  
+                                 
+
+         </style>
+           
+        </body>
+        
+    </head>
+</html>

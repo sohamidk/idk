@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Love Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;   /* STACK items vertically */
+            justify-content: center;  /* Center vertically */
+            align-items: center;      /* Center horizontally */
+            background-image: linear-gradient(
+                to bottom right,
+                rgb(255, 255, 255),
+                rgb(194, 34, 90),
+                rgb(106, 3, 75)
+            );
+        }
+
+        .love-text {
+            font-family: 'Pacifico', cursive;
+            font-size: 28px;
+            color: #f692bd;
+            margin-top: 15px; /* space between image and text */
+             animation: fadeIn 1.5s ease-in-out;
+                                    }
+
+                             @keyframes fadeIn {
+                                                from {
+                                                     opacity: 0;
+                                                     transform: translateY(10px);
+                                                     }
+                                                to {
+                                                    opacity: 1;
+                                                    transform: translateY(0);
+                                                    }
+                                                }
+        
+    </style>
+</head>
+
+<body onclick="window.location.href='home.html'">
+
+    <img src="kiss.gif" alt="Icon" width="200" height="200">
+
+    <div class="love-text">
+        <h4>love youhhh!!</h4>
+    </div>
+
+</body>
+</html>
